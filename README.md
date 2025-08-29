@@ -1,6 +1,6 @@
 # MetrikaBox
 
-MetrikaBox is an open framework for experimenting with audio classification. 
+MetrikaBox is an open framework for experimenting with audio classification.
 
 This framework allows you to process an audio dataset for classification tasks using [Keras][keras] models. You can configure the processing parameters through command line arguments, which are described below.
 
@@ -123,7 +123,7 @@ This will train a model using the GTZAN Speech & Music classification dataset, t
 
 #### 4.1.1. Mandatory Arguments
 
-- `--folder`: Path to the directory containing the folders with the class labels. Each folder must contain the audio files of a single class. 
+- `--folder`: Path to the directory containing the folders with the class labels. Each folder must contain the audio files of a single class.
 
 #### 4.1.2. Optional Arguments
 
@@ -151,7 +151,7 @@ This will train a model using the GTZAN Speech & Music classification dataset, t
 - `--learning_rate`: Learning rate for the optimizer. This value must be a decimal number.
 (Default: 0.001)
 
-- `--model_id`: ID of the model to use 
+- `--model_id`: ID of the model to use
 (Default: A combination of the Current time, the configured sample rate and the processing window and step separated by _).
 
 - `--stft_nfft`: Length of the FFT window. This value must be an integer.
@@ -189,7 +189,7 @@ This will train a model using the GTZAN Speech & Music classification dataset, t
 
 In this case we will train a classification model using the GTZAN Genres classification dataset running the following command:
 
-```bash 
+```bash
 python main.py train "datasets/GTZAN Genre/" --model keras.MobileNetV2 --model_id "GTZAN_Genres" -sr 16000 --window 5 --step 2.5 --batch_size 32 --epochs 100 --learning_rate 0.001 --audio_augmentations [WhiteNoiseAugmentation]
 ```
 
@@ -220,16 +220,18 @@ python main.py infer samples/audio2.ogg checkpoints/GTZAN_Genres.keras checkpoin
 This repository contains the code required to reproduce the experiments from our paper, ["Paper"][paper]. If you use this work in your research, please cite it using the following BibTeX entry:
 
 ```
-@article{perianezpascual25,
-    title = {MetrikaBox: an open framework for experimenting with audio classification},
-    author = {Perianez-Pascual, Jorge and Gutiérrez, Juan D. and Rodriguez-Echeverria, Roberto and Sánchez Figueroa, Fernando},
-    doi = {10.1000/182},
-    journal = {SoftwareX},
-    langid = {english},
-    month = {January},
-    number = {1},
-    volume = {1},
-    year = {2025}
+@article{PERIANEZPASCUAL2025102306,
+  title        = {MetrikaBox: An open framework for experimenting with audio classification},
+  author       = {Jorge Perianez-Pascual and Juan D. Gutiérrez and Emilio Delgado and Fernando Sánchez-Figueroa and Roberto Rodriguez-Echeverria},
+  year         = 2025,
+  journal      = {SoftwareX},
+  volume       = 31,
+  pages        = 102306,
+  doi          = {https://doi.org/10.1016/j.softx.2025.102306},
+  issn         = {2352-7110},
+  url          = {https://www.sciencedirect.com/science/article/pii/S2352711025002729},
+  keywords     = {Artificial Intelligence, Deep Learning, Audio classification, Neural networks, Digital signal processing, Software engineering},
+  abstract     = {This paper presents MetrikaBox, a general-purpose, open-source, and extensible audio classification package designed to facilitate the development of Deep Learning (DL) models for a wide range of audio processing tasks. The software manages all necessary preprocessing steps to build classification models capable of distinguishing between user-defined classes using advanced Artificial Intelligence (AI) techniques. MetrikaBox is well suited for tasks such as musical genre classification, voice-versus-music discrimination, and other audio classification or segmentation applications. Users can either employ the package as provided or extend it by integrating their own datasets, classification models, data loading systems, augmentation techniques, and more. The package has been tested in both commercial and academic settings, where it has produced models for industrial audio processing and served as a platform for proof-of-concept applications. Comprehensive documentation and practical examples included in the repository support users in integrating the system into their audio analysis projects. MetrikaBox is openly available and provides a user interface for convenient testing.}
 }
 ```
 

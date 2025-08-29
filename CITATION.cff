@@ -1,31 +1,26 @@
 cff-version: 1.2.0
 message: If you use this software, please cite both the article from preferred-citation and the software itself.
 authors:
-  - family-names: Perianez-Pascual
-    given-names: Jorge
-  - family-names: Gutiérrez
-    given-names: Juan D.
-  - family-names: Rodriguez-Echeverria
-    given-names: Roberto
-  - family-names: Sánchez Figueroa
-    given-names: Fernando
-title: 'MetrikaBox: an open framework for experimenting with audio classification'
+  - family-names: Jorge Perianez-Pascual
+    given-names: Juan D. Gutiérrez
+  - family-names: Emilio Delgado
+    given-names: Fernando Sánchez-Figueroa
+title: 'MetrikaBox: An open framework for experimenting with audio classification'
 version: 1.0.0
-doi: 10.1000/182
-date-released: '2025-03-20'
+url: https://www.sciencedirect.com/science/article/pii/S2352711025002729
+doi: https://doi.org/10.1016/j.softx.2025.102306
+date-released: '2025-08-29'
 preferred-citation:
   authors:
-    - family-names: Perianez-Pascual
-      given-names: Jorge
-    - family-names: Gutiérrez
-      given-names: Juan D.
-    - family-names: Rodriguez-Echeverria
-      given-names: Roberto
-    - family-names: Sánchez Figueroa
-      given-names: Fernando
-  title: 'MetrikaBox: an open framework for experimenting with audio classification'
-  doi: 10.1000/182
+    - family-names: Jorge Perianez-Pascual
+      given-names: Juan D. Gutiérrez
+    - family-names: Emilio Delgado
+      given-names: Fernando Sánchez-Figueroa
+  title: 'MetrikaBox: An open framework for experimenting with audio classification'
+  doi: https://doi.org/10.1016/j.softx.2025.102306
+  url: https://www.sciencedirect.com/science/article/pii/S2352711025002729
   type: article-journal
-  year: '2025'
+  pages: 102306
+  year: 2025
   conference: {}
   publisher: {}
