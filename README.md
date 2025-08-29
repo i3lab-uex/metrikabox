@@ -217,7 +217,7 @@ python main.py infer samples/audio2.ogg checkpoints/GTZAN_Genres.keras checkpoin
 
 ## 5. Citing this Work
 
-This repository contains the code required to reproduce the experiments from our paper, ["Paper"][paper]. If you use this work in your research, please cite it using the following BibTeX entry:
+This repository contains the code required to reproduce the experiments from our paper, ["MetrikaBox: An open framework for experimenting with audio classification"][metrikabox_paperpaper]. If you use this work in your research, please cite it using the following BibTeX entry:
 
 ```
 @article{PERIANEZPASCUAL2025102306,
@@ -235,4 +235,4 @@ This repository contains the code required to reproduce the experiments from our
 }
 ```
 
-[paper]: https://doi.org/10.1000/182 "MetrikaBox: an open framework for experimenting with audio classification"
+[metrikabox_paperpaper]: https://doi.org/10.1016/j.softx.2025.102306 "MetrikaBox: An open framework for experimenting with audio classification"
